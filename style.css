@@ -1,0 +1,193 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Merriweaether', serif;
+    min-height:100vh;
+}
+
+h1{
+    font-size: 6vh;
+    font-weight: 900;
+}
+
+h2{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    font-family:'Roboto', serif;
+}
+
+/* HEADER */
+header{
+    font-family: 'Roboto', serif;
+    font-size: 1.5rem;
+}
+/* MAIN */
+main{
+    padding-bottom:5rem;
+}
+/* TOAST */
+.toast{
+    font-family: 'Roboto', serif;
+}
+
+/* ABOUT */
+.artist{
+    max-width:100%;
+    display:flex;
+    justify-content:space-around;
+    margin: 64px 0;
+}
+
+.artist_photo{
+    max-width: 30rem;
+    height: 30rem;
+    border-radius: 12px;
+    margin:16px;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.171);
+}
+
+.artist_text{
+    font-size: 24px;
+    margin-left: 32px;
+}
+
+.artist_button{
+    padding: 16px 32px;
+    border-radius: 100px;
+    background-color:#000;
+    color:#fff;
+}
+
+/* FEATURE */
+.feat{
+    text-align: center;
+}
+
+.feat_artists{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+} 
+
+.artist_name{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.feat_artists img{
+    width:20rem;
+    height:20rem;
+    border-radius:50%;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.171);
+}
+
+/* DISCOGRAPHY */
+.disco_h, .tour_h, .merch_h{
+    text-align: center;
+}
+
+.row{
+    justify-content: center;
+    margin:auto 0;
+}
+.albums img{
+    transition: transform 1s ease;
+    width: 20rem;
+    height: 20rem;
+}
+
+.stories{
+    text-align: center;
+}
+
+/* TOUR */
+.tour{
+    color:#fff;
+}
+.tour h1{
+    font-size:64px;
+}
+
+.schedule{
+    font-size: 1.5rem;
+}
+
+
+/* FOOTER */
+footer{
+    position:sticky;
+    top:100%;
+}
+
+.footer_content{
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Roboto', serif;
+}
+
+/* MERCH */
+.products{
+}
+
+.card{
+    margin: 0 auto;
+}
+
+/* ANIMATION */
+.hidden{
+    opacity:0;
+    transition: all 1s;
+}
+
+.show{
+    opacity:0.8;
+}
+
+@media screen and (max-width: 870px) {
+    .artist{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 64px 0;
+        text-align: center;
+    }
+
+    .artist_text{
+        margin:0;
+    }
+
+    .feat_artists{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    
+    .artist_photo{
+        max-width: 100%;
+        height: 30rem;
+        border-radius: 12px;
+        margin:0 auto;
+        box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.171);
+    }
+
+    .products{
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 2rem auto;
+    }
+}
